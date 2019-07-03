@@ -70,7 +70,7 @@ shadowJar {
 }
 
 run.classpath += configurations.developmentOnly
-run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=1', '-Dcom.sun.management.jmxremote')
+run.jvmArgs('-noverify', '-XX:TieredStopAtLevel=0', '-Dcom.sun.management.jmxremote', '-Xmx256M')
 
 jar {
     manifest {
